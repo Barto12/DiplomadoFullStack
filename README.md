@@ -46,5 +46,5 @@ Para poder trabajar las actividades del curso, se pide a los alumnos lo siguient
 5. De preferencia si son usuarios de Windows, tener la version actual del sistema operativo y que la arquitectura de su computadora sea de 64 bits. Para que la descarga de los programas sea más facil y hay compatibilidad.
 6. Si son usuarios Mac,tener la version actual del sistema operativo y que la arquitectura de su computadora sea compatible con los requisitos de compatibilidad que piden los programas para ser descargados. Para que la descarga de los programas sea más facil y hay compatibilidad.
 
-
+#Bienvenido al diplomado! 
 
