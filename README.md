@@ -14,3 +14,16 @@ Durante 4 meses aprenderás las metodologías y tecnologías más actualizadas d
 6. Testing.
 7. Deploy a producción.
 
+Además podrás poner a prueba tus conocimientos para presentar al final del curso un proyecto final.
+
+## Modo de trabajo en la clase 
+
+Las clases serán vía remota por Google Meet, serán todos los lunes de 20:00 a 10:00 pm. La liga de Google Meet será proporcionada por el area academica.
+El contenido de las clases serán 20% teoria y 80% porciento práctica, para mayor comodidad las clases serán grabadas y ustedes podrán accesar a la grabación en caso de que tengan dudas.
+La coordinación academica les proporcionará acceso al grupo de whatsapp del diplomado, con la finalidad de que ustedes expresen las dudas tecnicas que tengan sobre el curso, las tareas y otros temas relacionados por ejemplo sobre como instalar un editor de codigo, acceso a documentación,etc. 
+
+# Reglas de la clase
+**Favor de leer detenidamente**
+## Al inicio de la primera clase la coordinación academica les explicará las reglas de la institución y reglas generales sobre el comportamiento en clase.
+
+
