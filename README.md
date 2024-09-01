@@ -24,6 +24,9 @@ La coordinación academica les proporcionará acceso al grupo de whatsapp del di
 
 # Reglas de la clase
 **Favor de leer detenidamente**
-## Al inicio de la primera clase la coordinación academica les explicará las reglas de la institución y reglas generales sobre el comportamiento en clase.
+## Al inicio de la primera clase la coordinación academica les explicará las reglas de la institución y reglas generales sobre el comportamiento en clase. Dentro de cada clase, comunicación vía grupo de whatsapp del curso y otros medios de comunicación que disponga la coordinación academica se espera que tanto el instructor como los alumnos matriculados al curso "Diplomado FullStack Septiembre 2024" se dirijan mutuamente con respeto al instructor, a las autoridades de la institución y a los demás compañeros. Con la unica finalidad de evitar malos entendidos y crear un ambiente de respeto y colaboración durante el periodo en el que dure el curso. 
+
+**Reglas para participar durante la sesión en vivo (clase online)**
+
 
 
