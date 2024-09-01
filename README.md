@@ -33,6 +33,18 @@ Para poder participar durante la clase, por favor utilicen la herramienta "alzar
 
 Se les pide de la manera mas atenta que cuando quieran expresar una duda, comentario sobre la clase lo hagan con respeto para el instructor y sus demás compañeros, con la finalidad de que  cada clase se lleve de forma ordenada y con respeto. 
 
+Si llegarán a tener alguna duda o comentario sobre el diplomado por favor dirijanlas a la coordinación academica. 
+
+## Herramientas de trabajo 
+
+Para poder trabajar las actividades del curso, se pide a los alumnos lo siguiente: 
+
+1. Crear una cuenta en github.com (favor de crear su usuario y contraseña, ya que durante el diplomado utilizaremos github para accesar al contenido de las clases y subir los archivos de codigo que se dejaran de tarea).
+2. Descargar Visual Studio Code o intellij que son los editores de codigo más usados dentro del mercado laboral.(En caso de ya tenerlo instalado solo verificar que tengas la version actual, si no lo tienes instalado más adelante en el curso se darán instrucciones sobre como descargar la herramienta).
+3. Estar al pendiente de las actualizaciones de la rama de github del diplomado para que puedan accesar al material de estudio.
+4. Descargar MYSQL y MONGODB (NOSQL)En caso de ya tenerlo instalado solo verificar que tengas la version actual, si no lo tienes instalado más adelante en el curso se darán instrucciones sobre como descargar la herramienta).
+5. De preferencia si son usuarios de Windows, tener la version actual del sistema operativo y que la arquitectura de su computadora sea de 64 bits. Para que la descarga de los programas sea más facil y hay compatibilidad.
+6. Si son usuarios Mac,tener la version actual del sistema operativo y que la arquitectura de su computadora sea compatible con los requisitos de compatibilidad que piden los programas para ser descargados. Para que la descarga de los programas sea más facil y hay compatibilidad.
 
 
 
