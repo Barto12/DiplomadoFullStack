@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCom - Tecnología y Comunicaciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bienvenidos a TechCom</h1>
+  <p>Soluciones en tecnología y comunicaciones para tu empresa</p>
+</header>
+
+<nav>
+  <a href="#about">Acerca de</a>
+  <a href="#services">Servicios</a>
+  <a href="#contact">Contacto</a>
+</nav>
+
+<section id="about">
+  <h2>Acerca de Nosotros</h2>
+  <p>En TechCom, nos especializamos en ofrecer soluciones tecnológicas innovadoras y servicios de comunicación personalizados para optimizar los procesos de tu negocio.</p>
+</section>
+
+<section id="services">
+  <h2>Nuestros Servicios</h2>
+  <ul>
+    <li>Desarrollo de software a medida</li>
+    <li>Consultoría en tecnología y telecomunicaciones</li>
+    <li>Instalación y mantenimiento de redes</li>
+    <li>Soporte técnico y atención 24/7</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contáctanos</h2>
+  <form action="/submit" method="post">
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Mensaje:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2024 TechCom - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
