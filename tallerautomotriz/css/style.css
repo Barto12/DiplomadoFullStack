@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #242424;
+  padding: 1.5em 0;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  width: 130px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin-left: 2em;
+}
+header nav ul li a {
+  color: white;
+  font-size: 1.1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid #ff6b35;
+}
+
+#hero {
+  background-color: #242424;
+  background: url("../img/hero.jpg") no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .container h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+#hero .container p {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}
+#hero .container .btn-primary {
+  padding: 1em 2em;
+  background-color: #50c9c3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#hero .container .btn-primary:hover {
+  background-color: #36b0aa;
+}
+
+.section {
+  padding: 4em 0;
+  background-color: #f9f9f9;
+}
+
+#servicios h2, #nosotros h2, #contacto h2 {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 2.5em;
+  color: #242424;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+.service-list .service {
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.service-list .service:hover {
+  transform: translateY(-10px);
+}
+.service-list .service h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #ff6b35;
+}
+.service-list .service p {
+  font-size: 1em;
+  color: #2d2d2d;
+}
+
+#nosotros {
+  background-color: white;
+  text-align: center;
+  padding: 4em 2em;
+}
+#nosotros p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+#contacto {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#contacto form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#contacto form input, #contacto form textarea {
+  padding: 1em;
+  border: 1px solid #242424;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+#contacto form textarea {
+  resize: none;
+  height: 150px;
+}
+#contacto form .btn-primary {
+  padding: 1em 2em;
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+footer p {
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,213 @@
+// Variables
+$primary-color: #ff6b35;
+$secondary-color: #242424;
+$text-color: #2d2d2d;
+$light-bg-color: #f9f9f9;
+$accent-color: #50c9c3;
+$font-stack: 'Poppins', sans-serif;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  background-color: $light-bg-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 1.5em 0;
+
+  .container {
+    @include flex-center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-left: 2em;
+
+      a {
+        color: white;
+        font-size: 1.1em;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s ease;
+
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+  }
+}
+
+#hero {
+  background-color: #242424; // Color de respaldo si la imagen no se carga
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  @include flex-center;
+
+  .container {
+    h1 {
+      font-size: 3.5em;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin-bottom: 1.5em;
+    }
+
+    .btn-primary {
+      padding: 1em 2em;
+      background-color: $accent-color;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($accent-color, 10%);
+      }
+    }
+  }
+}
+
+.section {
+  padding: 4em 0;
+  background-color: $light-bg-color;
+}
+
+#servicios, #nosotros, #contacto {
+  h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+    color: $secondary-color;
+  }
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+
+  .service {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      color: $primary-color;
+    }
+
+    p {
+      font-size: 1em;
+      color: $text-color;
+    }
+  }
+}
+
+#nosotros {
+  background-color: white;
+  text-align: center;
+  padding: 4em 2em;
+
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
+}
+
+#contacto {
+  background-color: $light-bg-color;
+  text-align: center;
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    max-width: 600px;
+    margin: 0 auto;
+
+    input, textarea {
+      padding: 1em;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+      font-size: 1.1em;
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    .btn-primary {
+      padding: 1em 2em;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+
+  p {
+    font-size: 0.9em;
+  }
+}
