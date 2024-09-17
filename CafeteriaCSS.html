@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Café El Dicho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3e2723;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 80px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sección principal */
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #3e2723;
+            margin-bottom: 20px;
+        }
+
+        section p, section ul {
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Imágenes */
+        section img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Formulario */
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #3e2723;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Redes sociales */
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+            color: #3e2723;
+        }
+
+        .social-media i {
+            margin-right: 5px;
+        }
+
+        /* Mapa */
+        .map-container {
+            margin-top: 20px;
+        }
+
+        iframe {
+            border-radius: 5px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Home -->
+    <header>
+        <!-- Logo -->
+        <img src="images/logo_cafe.png" alt="Logo de El Café El Dicho" class="logo">
+        <h1>Bienvenidos a El Café El Dicho</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Home -->
+    <section id="home">
+        <h2>Home</h2>
+        <img src="images/cafe_home.jpg" alt="Imagen de Café en el local">
+        <p>El mejor café en la ciudad, en un ambiente acogedor y único. Disfruta de un delicioso café preparado con los mejores granos seleccionados.</p>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <img src="images/cafe_staff.jpg" alt="Nuestro equipo en El Café El Dicho">
+        <p>En El Café El Dicho, ofrecemos café de la más alta calidad, hecho con pasión y dedicación por nuestros baristas expertos. Somos una cafetería con años de experiencia en el servicio de bebidas y alimentos que inspiran momentos inolvidables.</p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <img src="images/cafe_servicios.jpg" alt="Servicios en El Café El Dicho">
+        <table>
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Servicio en mesa</td>
+                    <td>Disfruta de un servicio personalizado mientras te relajas en nuestra cafetería.</td>
+                </tr>
+                <tr>
+                    <td>Pedidos para llevar</td>
+                    <td>Recibe tu pedido listo para disfrutar en cualquier lugar.</td>
+                </tr>
+                <tr>
+                    <td>Eventos privados</td>
+                    <td>Organiza tus eventos en nuestro espacio con catering de primera calidad.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <img src="images/productos_cafe.jpg" alt="Productos de El Café El Dicho">
+        <ul>
+            <li>Café Americano</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Pasteles Artesanales</li>
+            <li>Bebidas Frías</li>
+        </ul>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <img src="images/cafe_contacto.jpg" alt="Contáctanos en El Café El Dicho">
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu email"><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <!-- Mapa de Ubicación -->
+        <div class="map-container">
+            <h3>Nuestra Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.3450951871444!2d-122.08424968469225!3d37.422065779826726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb7350134b7eb%3A0x3d8f52b177f735e8!2sGoogleplex!5e0!3m2!1ses!2sus!4v1641478094287!5m2!1ses!2sus" width="100%" height="400" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Botones de Redes Sociales -->
+        <div class="social-media">
+            <h3>Síguenos en Redes Sociales</h3>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 El Café El Dicho. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
