@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisora Alemana del Este</title>
+    <!-- Enlace a Font Awesome para agregar los iconos de redes sociales -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Reset básico: elimina márgenes y padding predeterminados */
+        * {
+            box-sizing: border-box; /* Hace que los márgenes y padding no aumenten el tamaño de los elementos */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo global para el cuerpo de la página */
+        body {
+            font-family: 'Arial', sans-serif; /* Fuente de texto principal */
+            background-color: #f4f4f4; /* Color de fondo claro */
+            color: #333; /* Color de texto principal */
+        }
+
+        /* Estilo del encabezado de la página */
+        header {
+            background: linear-gradient(135deg, #333, #555); /* Gradiente de fondo */
+            color: white; /* Color del texto en blanco */
+            padding: 50px 20px; /* Espaciado interno */
+            text-align: center; /* Texto centrado */
+        }
+
+        /* Tamaño y estilo del título principal */
+        header h1 {
+            font-size: 2.5rem; /* Tamaño de fuente grande */
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+
+        /* Estilo del párrafo en el encabezado */
+        header p {
+            font-size: 1.2rem; /* Tamaño de fuente */
+            margin-top: 0;
+        }
+
+        /* Estilo para la barra de navegación */
+        nav {
+            background-color: #444; /* Color de fondo oscuro */
+            padding: 10px 0; /* Espaciado superior e inferior */
+            text-align: center; /* Centra el contenido de los enlaces */
+        }
+
+        /* Estilo para los enlaces de navegación */
+        nav a {
+            color: white; /* Color de los enlaces */
+            margin: 0 15px; /* Espacio entre los enlaces */
+            text-decoration: none; /* Sin subrayado */
+            font-size: 1.1rem; /* Tamaño de fuente de los enlaces */
+            padding: 10px; /* Espaciado interno */
+            text-transform: uppercase; /* Convierte el texto a mayúsculas */
+            transition: background 0.3s ease; /* Efecto suave en el cambio de fondo al pasar el ratón */
+        }
+
+        /* Efecto hover: cambia el color de fondo de los enlaces al pasar el ratón */
+        nav a:hover {
+            background-color: #555; /* Cambia el color de fondo al hacer hover */
+            padding: 10px 20px; /* Añade espaciado adicional para resaltar el enlace */
+            border-radius: 5px; /* Redondea los bordes */
+        }
+
+        /* Contenedor de contenido principal */
+        .content {
+            padding: 30px 20px; /* Espaciado interno */
+            max-width: 1200px; /* Ancho máximo */
+            margin: auto; /* Centra el contenedor */
+            text-align: center; /* Centra el texto */
+        }
+
+        /* Títulos dentro del contenido */
+        .content h2 {
+            font-size: 2rem; /* Tamaño de fuente de los subtítulos */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+
+        /* Estilo para los párrafos del contenido */
+        .content p {
+            font-size: 1.1rem; /* Tamaño de fuente de los párrafos */
+            line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+            margin-bottom: 30px; /* Espacio inferior */
+        }
+
+        /* Estilo para las imágenes dentro del contenido */
+        .content img {
+            max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+
+        /* Estilo para las secciones generales */
+        .section {
+            padding: 50px 20px; /* Espaciado interno */
+            text-align: center; /* Texto centrado */
+        }
+
+        /* Fondo claro para secciones */
+        .section-light {
+            background-color: #f4f4f4; /* Color de fondo claro */
+        }
+
+        /* Fondo oscuro para secciones */
+        .section-dark {
+            background-color: #333; /* Color de fondo oscuro */
+            color: white; /* Color de texto blanco */
+        }
+
+        /* Estilo para los párrafos en secciones oscuras */
+        .section-dark p {
+            color: #ccc; /* Texto en gris claro para buen contraste */
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #333; /* Fondo oscuro */
+            color: white; /* Texto blanco */
+            padding: 30px 20px; /* Espaciado interno */
+            text-align: center; /* Centra el contenido */
+        }
+
+        /* Contenedor de iconos de redes sociales */
+        footer .social-icons {
+            margin-bottom: 20px; /* Espacio inferior */
+        }
+
+        /* Estilo para los enlaces de redes sociales */
+        footer .social-icons a {
+            color: white; /* Color blanco */
+            margin: 0 10px; /* Espacio entre iconos */
+            font-size: 1.5rem; /* Tamaño de los iconos */
+            transition: color 0.3s ease; /* Efecto de transición en el hover */
+        }
+
+        /* Efecto hover para los iconos de redes sociales */
+        footer .social-icons a:hover {
+            color: #1d72b8; /* Cambia a azul al pasar el ratón */
+        }
+
+        /* Estilo para el texto en el pie de página */
+        footer p {
+            font-size: 0.9rem; /* Tamaño de fuente del pie de página */
+        }
+
+        /* Media Query para pantallas medianas */
+        @media (min-width: 768px) {
+            header {
+                padding: 70px 0; /* Aumenta el espaciado en pantallas medianas */
+            }
+
+            header h1 {
+                font-size: 3rem; /* Aumenta el tamaño del título */
+            }
+
+            nav a {
+                margin: 0 25px; /* Aumenta el espaciado entre los enlaces de navegación */
+                font-size: 1.2rem; /* Aumenta el tamaño de los enlaces */
+            }
+
+            .content {
+                text-align: left; /* Alinea el texto a la izquierda */
+            }
+
+            .content img {
+                max-width: 60%; /* Las imágenes ocupan el 60% del ancho */
+                float: left; /* La imagen se desplaza a la izquierda */
+                margin-right: 20px; /* Espacio a la derecha de la imagen */
+            }
+
+            footer {
+                display: flex; /* Muestra el contenido en línea */
+                justify-content: space-between; /* Espacio entre los elementos del pie de página */
+                align-items: center; /* Alinea verticalmente */
+            }
+
+            footer .social-icons {
+                margin-bottom: 0; /* Elimina el margen inferior en pantallas medianas */
+            }
+        }
+
+        /* Media Query para pantallas grandes */
+        @media (min-width: 1024px) {
+            header {
+                padding: 100px 0; /* Aumenta el espaciado en pantallas grandes */
+            }
+
+            nav {
+                padding: 20px 0; /* Aumenta el espaciado en la barra de navegación */
+            }
+
+            .content img {
+                max-width: 50%; /* La imagen ocupa el 50% del ancho en pantallas grandes */
+                float: right; /* La imagen se desplaza a la derecha */
+                margin-left: 20px; /* Espacio a la izquierda de la imagen */
+            }
+
+            footer {
+                padding: 20px 100px; /* Aumenta el espaciado en el pie de página */
+            }
+
+            footer p {
+                text-align: right; /* Alinea el texto a la derecha */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con el título y descripción -->
+    <header>
+        <h1>Televisora Alemana del Este</h1>
+        <p>Conectando al mundo con lo mejor de Alemania del Este</p>
+    </header>
+
+    <!-- Barra de navegación con enlaces a diferentes secciones -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#programacion">Programación</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <section class="content" id="inicio">
+        <h2>Bienvenidos a la Televisora Alemana del Este</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Televisión en vivo">
+        <p>
+            Somos una televisora comprometida con la excelencia en la información y el entretenimiento.
+            Nuestro objetivo es conectar a nuestra audiencia con las noticias más importantes y ofrecer una programación variada y de alta calidad.
+        </p>
+    </section>
+
+    <!-- Sección de programación -->
+    <section class="section section-light" id="programacion">
+        <h2>Programación</h2>
+        <p>
+            Consulta nuestra programación semanal y no te pierdas ninguno de tus programas favoritos.
+        </p>
+        <img src="https://via.placeholder.com/600x300" alt="Programación">
+        <p>
+            Ofrecemos una variada selección de programas: desde documentales históricos hasta entretenimiento moderno, series y películas.
+        </p>
+    </section>
+
+    <!-- Sección de noticias -->
+    <section class="section section-dark" id="noticias">
+        <h2>Noticias</h2>
+        <p>
+            Mantente informado con las últimas noticias desde Alemania del Este y el mundo.
+        </p>
+        <img src="https://via.placeholder.com/600x300" alt="Noticias">
+        <p>
+            Analizamos los eventos más importantes a nivel global, brindando una perspectiva profunda y objetiva.
+        </p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="section section-light" id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas ponerte en contacto con nosotros, puedes enviarnos un mensaje o seguirnos en nuestras redes sociales.</p>
+    </section>
+
+    <!-- Pie de página con iconos de redes sociales -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2024 Televisora Alemana del Este. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
