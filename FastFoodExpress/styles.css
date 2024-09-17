@@ -1,0 +1,218 @@
+/* Fuentes y reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor reutilizable */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #ff4d4d;
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdb4d;
+}
+
+/* Sección del héroe */
+#hero {
+    background-image: url('hero-bg.jpg'); /* Coloca la imagen de fondo adecuada */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Capa oscura para mejorar la legibilidad del texto */
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ffdb4d;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Sección de contenido general */
+.contenido {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.menu-items, .promo-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff4d4d;
+}
+
+.tarjeta p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.tarjeta .price {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Sección de promociones con fondo claro */
+.bg-light {
+    background-color: #f0f0f0;
+}
+
+/* Sección de contacto */
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff4d4d;
+}
+
+.socials li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para el ícono de WhatsApp */
+.whatsapp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp a {
+    display: inline-block;
+    color: white;
+    background-color: #25D366;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp a i {
+    margin-right: 8px;
+}
+
+.whatsapp a:hover {
+    background-color: #22c65b;
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
