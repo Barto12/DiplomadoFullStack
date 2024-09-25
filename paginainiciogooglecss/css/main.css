@@ -1,0 +1,212 @@
+/* Estilos generales del cuerpo de la página */
+body {
+	margin: 0; /* Elimina el margen por defecto del navegador */
+	padding: 0; /* Elimina el padding por defecto del navegador */
+	font-size: 13px; /* Establece el tamaño de fuente para todo el contenido */
+	font-family: Arial, Helvetica, sans-serif; /* Fuente por defecto para el texto */
+}
+
+/* Estilo para los enlaces */
+a {
+	text-decoration: none; /* Elimina el subrayado de los enlaces */
+	cursor: pointer; /* Cambia el cursor a pointer al pasar sobre el enlace */
+}
+
+/* Estilos para el encabezado de la página */
+header {
+	width: 100%; /* El encabezado ocupará el ancho completo de la página */
+	height: 60px; /* Altura fija del encabezado */
+}
+
+/* Estilos para la barra de navegación dentro del encabezado */
+header nav {
+	display: flex; /* Utiliza flexbox para alinear el contenido de la barra */
+	justify-content: flex-end; /* Alinea el contenido hacia la derecha */
+	align-items: center; /* Centra verticalmente el contenido dentro del nav */
+}
+
+/* Estilo para la sección derecha de la barra de navegación */
+header nav .nav-right-section {
+	width: 250px; /* Ancho fijo para la sección derecha */
+	height: auto; /* Altura dinámica según el contenido */
+	display: flex; /* Utiliza flexbox para distribuir el contenido */
+	list-style: none; /* Elimina los puntos de la lista */
+	justify-content: center; /* Centra horizontalmente los elementos */
+	align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilo para los enlaces dentro de la barra de navegación */
+nav .nav-right-section a {
+	margin-right: 10px; /* Añade espacio entre los enlaces */
+	color: #000000; /* El color del texto de los enlaces es negro */
+}
+
+/* Icono del menú de hamburguesa en la barra de navegación */
+nav .nav-right-section .menu-icon {
+	background-image: url('https://static.thenounproject.com/png/756729-200.png'); /* Imagen del icono */
+	background-repeat: no-repeat; /* Evita que la imagen se repita */
+	background-position: center; /* Coloca la imagen en el centro del contenedor */
+	background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
+	width: 25px; /* Ancho del icono */
+	height: 25px; /* Altura del icono */
+}
+
+/* Estilo para la imagen de perfil (redondeada) */
+nav .nav-right-section img {
+	border-radius: 50%; /* Hace que la imagen sea circular */
+	margin-left: 10px; /* Añade un margen a la izquierda de la imagen */
+	width: 36px; /* Ancho fijo de la imagen */
+}
+
+/* Estilos para la sección principal */
+main {
+	margin-top: 150px; /* Añade un margen superior grande */
+	text-align: center; /* Centra el contenido de la sección principal */
+}
+
+/* Contenedor del logo principal */
+main .main-logo {
+	width: 530px; /* Ancho fijo del contenedor del logo */
+	margin: 0 auto; /* Centra el contenedor horizontalmente */
+	margin-bottom: 35px; /* Añade espacio debajo del logo */
+}
+
+/* Estilo de la imagen del logo */
+main .main-logo img {
+	width: 300px; /* Ajusta el tamaño de la imagen del logo */
+}
+
+/* Contenedor del campo de búsqueda */
+main .main-input {
+	width: 530px; /* Ancho fijo del contenedor de búsqueda */
+	margin: 0 auto; /* Centra el contenedor horizontalmente */
+	margin-bottom: 35px; /* Añade espacio debajo del contenedor */
+}
+
+/* Contenedor de la barra de búsqueda */
+main .main-input-container {
+	width: 525px; /* Ancho de la barra de búsqueda */
+	border-radius: 100px; /* Bordes redondeados para un estilo más suave */
+	border: 1px solid #dfe1e5; /* Añade un borde gris claro */
+	display: flex; /* Utiliza flexbox para distribuir el contenido */
+	justify-content: space-between; /* Distribuye el espacio entre los elementos internos */
+	align-items: center; /* Centra verticalmente los elementos */
+	padding: 0 15px; /* Añade padding para que los elementos no toquen el borde */
+}
+
+/* Estilo del campo de texto de búsqueda */
+main .main-input input {
+	width: 400px; /* Ancho del campo de texto */
+	height: 40px; /* Altura del campo de texto */
+	border: none; /* Elimina el borde por defecto */
+	outline: none; /* Elimina el contorno cuando está en foco */
+	padding-left: 10px; /* Añade espacio interno a la izquierda */
+}
+
+/* Estilo para el efecto hover de la barra de búsqueda */
+main .main-input-container:hover {
+	box-shadow: 0 1px 6px 0 #20212447; /* Añade sombra al pasar el ratón */
+	border-color: #dfe1e500; /* Elimina el borde visible */
+}
+
+/* Icono de búsqueda (lupa) */
+main .main-input .search-icon {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png'); /* Imagen del icono de lupa */
+	background-repeat: no-repeat; /* Evita la repetición de la imagen */
+	background-position: center; /* Coloca el icono en el centro */
+	background-size: contain; /* Ajusta el tamaño del icono dentro del contenedor */
+	width: 18px; /* Ancho del icono */
+	height: 18px; /* Altura del icono */
+	margin-right: 10px; /* Añade espacio a la derecha del icono */
+}
+
+/* Icono de búsqueda por voz (micrófono) */
+main .main-input .micro-icon {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png'); /* Imagen del icono de micrófono */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 18px; /* Ancho del icono */
+	height: 18px; /* Altura del icono */
+	cursor: pointer; /* Cambia el cursor a pointer */
+	margin-left: 10px; /* Añade margen a la izquierda del icono */
+}
+
+/* Icono de búsqueda por imagen (Google Lens) */
+main .main-input .image-search-icon {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Google_Lens_-_new_logo.png/1200px-Google_Lens_-_new_logo.png'); /* Imagen del icono de Google Lens */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 18px; /* Ancho del icono */
+	height: 18px; /* Altura del icono */
+	cursor: pointer; /* Cambia el cursor a pointer */
+	margin-left: 10px; /* Añade margen a la izquierda del icono */
+}
+
+/* Contenedor de los botones principales */
+main .main-buttons {
+	width: 530px; /* Ancho fijo del contenedor de botones */
+	margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo para cada botón */
+main .main-buttons div {
+	display: inline-block; /* Coloca los botones uno al lado del otro */
+}
+
+main .main-buttons button {
+	height: 36px; /* Altura de los botones */
+	background-color: #f2f2f2; /* Color de fondo gris claro */
+	border: 0; /* Elimina el borde por defecto */
+	font-size: 14px; /* Tamaño del texto del botón */
+	color: #5f6368; /* Color del texto */
+	border-radius: 5px; /* Bordes ligeramente redondeados */
+	padding: 0 15px; /* Espacio interno lateral */
+	margin-right: 15px; /* Espacio entre botones */
+}
+
+/* Estilo para el efecto hover en los botones */
+main .main-buttons button:hover {
+	border: 1px solid #c6c6c6; /* Añade un borde gris claro al pasar el ratón */
+	box-shadow: 0 1px 1px #f5f5f5; /* Añade una pequeña sombra al pasar el ratón */
+	color: #222; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+	width: 100%; /* El pie de página ocupa todo el ancho de la página */
+	height: 50px; /* Altura fija del pie de página */
+	position: absolute; /* Se posiciona en la parte inferior de la ventana */
+	bottom: 0; /* Se asegura de estar pegado al fondo */
+	display: grid; /* Utiliza grid para organizar el contenido */
+	grid-template-columns: 1fr 1fr; /* Divide el pie de página en dos columnas */
+	align-items: center; /* Alinea verticalmente los elementos */
+	font-size: 13px; /* Tamaño del texto en el pie de página */
+	background-color: #f2f2f2; /* Color de fondo gris claro */
+	border-top: 1px solid #e4e4e4; /* Añade una línea divisoria en la parte superior */
+}
+
+/* Estilo para las listas dentro del pie de página */
+footer ul {
+	margin: 10px; /* Margen alrededor de la lista */
+	list-style: none; /* Elimina los puntos de la lista */
+	display: flex; /* Coloca los elementos de la lista en línea horizontal */
+	padding-left: 0; /* Elimina el padding a la izquierda */
+}
+
+/* Justificación de la columna izquierda del pie de página */
+footer .footer-left {
+	justify-self: left; /* Alinea el contenido a la izquierda */
+}
+
+/* Justificación de la columna derecha del pie de página */
+footer .footer-right {
+	justify-self: right; /* Alinea el contenido a la derecha */
+}
+
+/* Estilo de los enlaces dentro del pie de página */
+footer ul li a {
+	margin: 10px; /* Espacio alrededor de cada enlace */
+	color: #5f6368; /* Color del texto de los enlaces */
+}
