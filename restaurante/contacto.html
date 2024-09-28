@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto | Tacos de la Esquina</title>
+    <meta name="description" content="Contáctanos en Tacos de la Esquina para realizar pedidos o consultas.">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Tacos de la Esquina">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos para realizar pedidos o consultas:</p>
+        <form action="send-contact.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+    </section>
+<!-- Sección Ubicación -->
+<section id="ubicacion" class="location">
+  <h2>Encuéntranos</h2>
+  <p>Estamos ubicados en Forum Buenavista, local 5D, planta baja, al lado del Banco Azteca.</p>
+  <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <ul>
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Tacos de la Esquina. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
