@@ -1,179 +1,228 @@
+/* Elimina márgenes y rellenos predeterminados en todos los elementos y establece el modelo de caja en 'border-box' */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
   color: #2d2d2d;
-  line-height: 1.6;
+  line-height: 1.6; /* Mejora la legibilidad del texto */
 }
 
+/* Elimina el subrayado de los enlaces y hereda el color del texto circundante */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Contenedor principal con un ancho máximo y centrado automático */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centra horizontalmente */
 }
 
+/* Estilos para el encabezado de la página */
 header {
   background-color: #242424;
-  padding: 1.5em 0;
+  padding: 1.5em 0; /* Espaciado vertical dentro del header */
 }
+
+/* Estilos para el contenedor dentro del header: uso de flexbox para alinear los elementos */
 header .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Distribuye los elementos (logo y menú) equitativamente */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
 }
+
+/* Tamaño del logo en el header */
 header .logo {
   width: 130px;
 }
+
+/* Elimina el estilo de lista para los elementos del menú de navegación */
 header nav ul {
   display: flex;
-  list-style: none;
+  list-style: none; /* Elimina viñetas de la lista */
 }
+
+/* Espaciado entre los elementos del menú de navegación */
 header nav ul li {
   margin-left: 2em;
 }
+
+/* Estilos para los enlaces de navegación */
 header nav ul li a {
-  color: white;
-  font-size: 1.1em;
+  color: white; /* Color de texto blanco */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
   padding-bottom: 0.5em;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
-}
-header nav ul li a:hover {
-  border-bottom: 2px solid #ff6b35;
+  border-bottom: 2px solid transparent; /* Borde inferior invisible por defecto */
+  transition: all 0.3s ease; /* Transición suave para los cambios de estado */
 }
 
-#hero {
-  background-color: #242424;
-  background: url("../img/hero.jpg") no-repeat center center/cover;
-  height: 90vh;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Estilo hover para los enlaces del menú, cambiando el color del borde inferior */
+header nav ul li a:hover {
+  border-bottom: 2px solid #ff6b35; /* Borde inferior naranja al pasar el ratón */
 }
+
+/* Sección 'hero' con fondo de imagen y texto centrado */
+#hero {
+  background-color: #242424; /* Fondo de respaldo oscuro si la imagen no carga */
+  background: url("../img/hero.jpg") no-repeat center center/cover; /* Imagen de fondo centrada y ajustada para cubrir el área */
+  height: 90vh; /* La altura ocupa el 90% de la ventana del navegador */
+  color: black; /* Cambiado a texto negro */
+  text-align: center; /* Centrado de texto */
+  display: flex; /* Flexbox para alinear el contenido */
+  justify-content: center; /* Centrado horizontal del contenido */
+  align-items: center; /* Centrado vertical del contenido */
+}
+
+/* Título grande en la sección hero */
 #hero .container h1 {
   font-size: 3.5em;
-  font-weight: 600;
+  font-weight: 600; /* Negrita */
   margin-bottom: 0.5em;
 }
+
+/* Párrafo dentro de la sección hero */
 #hero .container p {
   font-size: 1.3em;
   margin-bottom: 1.5em;
 }
+
+/* Botón primario en la sección hero */
 #hero .container .btn-primary {
-  padding: 1em 2em;
+  padding: 1em 2em; /* Tamaño del botón */
   background-color: #50c9c3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: white; /* Texto en blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1.2em; /* Tamaño de fuente más grande */
+  cursor: pointer; /* Manito al pasar el ratón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
 }
+
+/* Estilo hover del botón primario */
 #hero .container .btn-primary:hover {
-  background-color: #36b0aa;
+  background-color: #36b0aa; /* Cambio de color del fondo del botón al pasar el ratón */
 }
 
+/* Clase general para secciones con relleno vertical */
 .section {
-  padding: 4em 0;
-  background-color: #f9f9f9;
+  padding: 4em 0; /* Espaciado vertical */
+  background-color: #f9f9f9; /* Fondo gris claro */
 }
 
+/* Estilos para los títulos de las secciones de servicios, nosotros y contacto */
 #servicios h2, #nosotros h2, #contacto h2 {
-  text-align: center;
+  text-align: center; /* Texto centrado */
   margin-bottom: 2em;
   font-size: 2.5em;
-  color: #242424;
+  color: #242424; /* Color del texto oscuro */
 }
 
+/* Lista de servicios dispuesta en una grilla */
 .service-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2em;
+  display: grid; /* Crea un sistema de grilla para organizar los servicios */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Distribuye las columnas de forma flexible */
+  gap: 2em; /* Espaciado entre las tarjetas de servicio */
 }
+
+/* Estilo para cada servicio dentro de la lista */
 .service-list .service {
-  background-color: white;
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
+  background-color: white; /* Fondo blanco para cada tarjeta */
+  padding: 2em; /* Espaciado interno en las tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center; /* Texto centrado dentro de las tarjetas */
+  transition: transform 0.3s ease; /* Transición suave para el efecto hover */
 }
+
+/* Efecto hover en cada servicio */
 .service-list .service:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /* Desplaza la tarjeta hacia arriba al pasar el ratón */
 }
+
+/* Estilos para los títulos dentro de los servicios */
 .service-list .service h3 {
   font-size: 1.5em;
   margin-bottom: 1em;
-  color: #ff6b35;
-}
-.service-list .service p {
-  font-size: 1em;
-  color: #2d2d2d;
+  color: #ff6b35; /* Color naranja */
 }
 
+/* Estilos para los párrafos dentro de los servicios */
+.service-list .service p {
+  font-size: 1em;
+  color: #2d2d2d; /* Color de texto gris oscuro */
+}
+
+/* Sección 'nosotros' con fondo blanco y texto centrado */
 #nosotros {
-  background-color: white;
+  background-color: white; /* Fondo blanco */
   text-align: center;
   padding: 4em 2em;
 }
+
+/* Párrafos dentro de la sección 'nosotros' con un ancho máximo */
 #nosotros p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1em;
+  max-width: 700px; /* Ancho máximo para limitar el texto */
+  margin: 0 auto; /* Centra el párrafo */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
 }
 
+/* Sección de contacto con fondo claro y formulario centrado */
 #contacto {
-  background-color: #f9f9f9;
-  text-align: center;
+  background-color: #f9f9f9; /* Fondo gris claro */
+  text-align: center; /* Texto centrado */
 }
+
+/* Formulario de contacto, dispuesto en una grilla */
 #contacto form {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5em;
-  max-width: 600px;
-  margin: 0 auto;
+  display: grid; /* Disposición de grilla para organizar los campos */
+  grid-template-columns: 1fr; /* Una sola columna */
+  gap: 1.5em; /* Espaciado entre los campos del formulario */
+  max-width: 600px; /* Ancho máximo para el formulario */
+  margin: 0 auto; /* Centrado del formulario */
 }
+
+/* Estilos para los inputs y textarea del formulario */
 #contacto form input, #contacto form textarea {
-  padding: 1em;
-  border: 1px solid #242424;
-  border-radius: 5px;
-  font-size: 1.1em;
+  padding: 1em; /* Espaciado interno dentro de los campos */
+  border: 1px solid #242424; /* Borde oscuro para los campos */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1.1em; /* Tamaño de fuente mayor para facilitar la lectura */
 }
+
+/* Ajuste para el textarea */
 #contacto form textarea {
-  resize: none;
-  height: 150px;
+  resize: none; /* Evita que el usuario redimensione el campo */
+  height: 150px; /* Altura fija para el textarea */
 }
+
+/* Botón primario dentro del formulario */
 #contacto form .btn-primary {
-  padding: 1em 2em;
-  background-color: #ff6b35;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
+  padding: 1em 2em; /* Tamaño del botón */
+  background-color: #ff6b35; /* Fondo naranja */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1.2em; /* Tamaño de texto mayor */
+  cursor: pointer; /* Manito al pasar el ratón */
 }
 
+/* Estilos para el pie de página */
 footer {
-  background-color: #242424;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-}
-footer p {
-  font-size: 0.9em;
+  background-color: #242424; /* Fondo oscuro */
+  color: white; /* Texto en blanco */
+  text-align: center; /* Texto centrado */
+  padding: 1em 0; /* Espaciado superior e inferior */
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Estilos para los párrafos dentro del pie de página */
+footer p {
+  font-size: 0.9em; /* Tamaño de fuente pequeño */
+}

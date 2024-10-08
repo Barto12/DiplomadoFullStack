@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller Automotriz XYZ</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Especifica el conjunto de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive, adaptándose al tamaño de la pantalla -->
+    <title>Taller Automotriz XYZ</title> <!-- Título que aparecerá en la pestaña del navegador -->
+
+    <!-- Enlaces a hojas de estilo y fuentes externas -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlace al archivo CSS principal para estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Enlace a la fuente externa "Poppins" desde Google Fonts -->
 </head>
+
 <body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="container"> <!-- Contenedor para organizar el logo y el menú de navegación -->
+            <img src="img/logo.png" alt="Logo Taller Automotriz XYZ" class="logo"> <!-- Logo del taller con descripción alternativa -->
+            <nav> <!-- Navegación principal del sitio -->
+                <ul> <!-- Lista de enlaces de navegación -->
+                    <li><a href="#servicios">Servicios</a></li> <!-- Enlace a la sección de Servicios -->
+                    <li><a href="#nosotros">Nosotros</a></li> <!-- Enlace a la sección de Nosotros -->
+                    <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de Contacto -->
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <div class="container">
-        <img src="img/logo.png" alt="Logo Taller Automotriz XYZ" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <!-- Sección de héroe o portada principal -->
+    <section id="hero">
+        <div class="container"> <!-- Contenedor que centra y organiza el contenido -->
+            <h1>Confía en los expertos del Taller Automotriz XYZ</h1> <!-- Título principal de la portada -->
+            <p>Soluciones rápidas y confiables para tu auto.</p> <!-- Descripción o lema -->
+            <a href="#servicios" class="btn-primary">Ver Servicios</a> <!-- Botón que enlaza a la sección de Servicios -->
+        </div>
+    </section>
 
-<section id="hero">
-    <div class="container">
-        <h1>Confía en los expertos del Taller Automotriz XYZ</h1>
-        <p>Soluciones rápidas y confiables para tu auto.</p>
-        <a href="#servicios" class="btn-primary">Ver Servicios</a>
-    </div>
-</section>
-
-<section id="servicios" class="section">
-    <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-list">
-            <div class="service">
-                <h3>Mantenimiento Preventivo</h3>
-                <p>Mantenemos tu auto en óptimas condiciones.</p>
-            </div>
-            <div class="service">
-                <h3>Reparación de Motores</h3>
-                <p>Solucionamos cualquier problema de motor.</p>
-            </div>
-            <div class="service">
-                <h3>Diagnóstico Computarizado</h3>
-                <p>Contamos con la tecnología más avanzada.</p>
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2>Nuestros Servicios</h2> <!-- Título de la sección -->
+            <div class="service-list"> <!-- Contenedor para la lista de servicios -->
+                <div class="service"> <!-- Bloque para un servicio individual -->
+                    <h3>Mantenimiento Preventivo</h3> <!-- Nombre del servicio -->
+                    <p>Mantenemos tu auto en óptimas condiciones.</p> <!-- Descripción del servicio -->
+                </div>
+                <div class="service"> <!-- Otro bloque de servicio -->
+                    <h3>Reparación de Motores</h3>
+                    <p>Solucionamos cualquier problema de motor.</p>
+                </div>
+                <div class="service"> <!-- Otro bloque de servicio -->
+                    <h3>Diagnóstico Computarizado</h3>
+                    <p>Contamos con la tecnología más avanzada.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="nosotros" class="section">
-    <div class="container">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos un taller con más de 20 años de experiencia. Nuestro equipo está altamente capacitado y comprometido con la satisfacción de nuestros clientes.</p>
-    </div>
-</section>
+    <!-- Sección "Nosotros" -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2>Sobre Nosotros</h2> <!-- Título de la sección -->
+            <p>Somos un taller con más de 20 años de experiencia. Nuestro equipo está altamente capacitado y comprometido con la satisfacción de nuestros clientes.</p> <!-- Texto descriptivo sobre la empresa -->
+        </div>
+    </section>
 
-<section id="contacto" class="section">
-    <div class="container">
-        <h2>Contacto</h2>
-        <form action="#">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn-primary">Enviar</button>
-        </form>
-    </div>
-</section>
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2> <!-- Título de la sección -->
+            <form action="#"> <!-- Formulario para contactar al taller -->
+                <input type="text" placeholder="Nombre" required> <!-- Campo para ingresar el nombre -->
+                <input type="email" placeholder="Email" required> <!-- Campo para ingresar el correo electrónico -->
+                <textarea placeholder="Mensaje" required></textarea> <!-- Campo de texto para ingresar el mensaje -->
+                <button type="submit" class="btn-primary">Enviar</button> <!-- Botón para enviar el formulario -->
+            </form>
+        </div>
+    </section>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Taller Automotriz XYZ - Todos los derechos reservados</p>
-    </div>
-</footer>
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Taller Automotriz XYZ - Todos los derechos reservados</p> <!-- Texto de derechos de autor -->
+        </div>
+    </footer>
 
 </body>
 </html>
