@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #4CAF50;
+  padding: 1rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 1rem;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url("https://example.com/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-content {
+  color: #ffffff;
+  text-align: center;
+}
+.hero .hero-content h2 {
+  font-size: 3rem;
+}
+.hero .hero-content p {
+  font-size: 1.2rem;
+}
+.hero .hero-content .btn {
+  padding: 0.8rem 2rem;
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.hero .hero-content .btn:hover {
+  background-color: rgb(109.9800796813, 192.0199203187, 113.2948207171);
+}
+
+.services-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.services-section .service-card {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.services-section .service-card h3 {
+  color: #4CAF50;
+}
+.services-section .service-card p {
+  color: #333;
+}
+
+.about-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

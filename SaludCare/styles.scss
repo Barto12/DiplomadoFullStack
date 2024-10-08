@@ -1,0 +1,132 @@
+// Definición de variables para usar colores y otros valores en todo el archivo
+$primary-color: #4CAF50; // Color primario de la página (verde)
+$secondary-color: #ffffff; // Color secundario (blanco)
+$background-color: #f4f4f4; // Color de fondo (gris claro)
+$font-color: #333; // Color del texto (gris oscuro)
+$hero-background: url('https://example.com/hero-image.jpg'); // Imagen de fondo para la sección de héroe
+
+// Estilos generales aplicados a todo el cuerpo del documento
+body {
+    font-family: Arial, sans-serif; // Define la tipografía del cuerpo
+    color: $font-color; // Color del texto (usando la variable $font-color)
+    background-color: $background-color; // Color de fondo del cuerpo
+    margin: 0; // Elimina el margen por defecto del cuerpo
+    padding: 0; // Elimina el padding por defecto del cuerpo
+}
+
+// Estilos para el encabezado de la página
+header {
+    background: $primary-color; // Color de fondo del encabezado (usando $primary-color)
+    padding: 1rem; // Añade un espacio interior (padding) de 1rem
+
+    // Estilos para el menú de navegación dentro del encabezado
+    nav {
+        display: flex; // Usa flexbox para distribuir los elementos
+        justify-content: space-between; // Distribuye los elementos de forma equidistante (logo a la izquierda, menú a la derecha)
+        align-items: center; // Alinea verticalmente los elementos al centro
+
+        // Estilos para la lista del menú de navegación
+        ul {
+            list-style: none; // Elimina los estilos de lista por defecto (sin viñetas)
+            display: flex; // Usa flexbox para colocar los ítems en una línea horizontal
+
+            // Estilos para cada ítem del menú de navegación
+            li {
+                margin-right: 1rem; // Añade un espacio a la derecha entre los elementos de la lista
+
+                // Estilos para los enlaces dentro del menú
+                a {
+                    color: $secondary-color; // El color del texto de los enlaces es blanco (usando $secondary-color)
+                    text-decoration: none; // Elimina el subrayado por defecto de los enlaces
+
+                    // Cuando el enlace se pase por encima (hover)
+                    &:hover {
+                        text-decoration: underline; // Subraya el enlace al pasar el cursor por encima
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Estilos para la sección de héroe (la sección principal destacada al inicio de la página)
+.hero {
+    background-image: $hero-background; // Usa la imagen definida en la variable $hero-background como fondo
+    background-size: cover; // Hace que la imagen cubra toda el área sin distorsionarse
+    background-position: center; // Centra la imagen de fondo
+    height: 100vh; // La altura de la sección es el 100% de la altura de la ventana del navegador
+    display: flex; // Usa flexbox para alinear los elementos dentro de la sección
+    justify-content: center; // Centra horizontalmente los elementos dentro de la sección
+    align-items: center; // Centra verticalmente los elementos dentro de la sección
+
+    // Estilos para el contenido de texto dentro de la sección de héroe
+    .hero-content {
+        color: $secondary-color; // El color del texto es blanco (usando $secondary-color)
+        text-align: center; // Centra el texto
+
+        // Estilos para el título (h2) dentro de la sección de héroe
+        h2 {
+            font-size: 3rem; // Tamaño grande para el título
+        }
+
+        // Estilos para el párrafo dentro de la sección de héroe
+        p {
+            font-size: 1.2rem; // Un tamaño de fuente más pequeño que el título
+        }
+
+        // Estilos para el botón dentro de la sección de héroe
+        .btn {
+            padding: 0.8rem 2rem; // Añade espacio interno (padding) alrededor del texto del botón
+            background-color: darken($primary-color, 10%); // El color de fondo es una versión más oscura del color primario
+            color: $secondary-color; // El color del texto del botón es blanco
+            border: none; // Elimina cualquier borde del botón
+            cursor: pointer; // Cambia el cursor a "mano" cuando se pasa por encima del botón
+
+            // Estilo cuando el botón se pasa por encima (hover)
+            &:hover {
+                background-color: lighten($primary-color, 10%); // El color de fondo se aclara un poco al pasar el cursor
+            }
+        }
+    }
+}
+
+// Sección de servicios de la empresa
+.services-section {
+    padding: 2rem; // Añade un espacio interno alrededor de la sección
+    text-align: center; // Centra el texto de los servicios
+    background-color: $background-color; // Color de fondo de la sección (gris claro)
+
+    // Estilos para las tarjetas individuales de los servicios
+    .service-card {
+        margin: 1rem 0; // Añade espacio entre las tarjetas de servicio
+        padding: 1rem; // Añade espacio interno dentro de cada tarjeta
+        background-color: $secondary-color; // El fondo de cada tarjeta es blanco
+        border-radius: 5px; // Bordes redondeados para las tarjetas
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Añade una sombra ligera para dar un efecto de "elevación"
+
+        // Estilos para los títulos (h3) de las tarjetas de servicio
+        h3 {
+            color: $primary-color; // Color del título es el color primario (verde)
+        }
+
+        // Estilos para los párrafos dentro de las tarjetas de servicio
+        p {
+            color: $font-color; // Color del texto (gris oscuro)
+        }
+    }
+}
+
+// Sección "Acerca de" la empresa
+.about-section {
+    padding: 2rem; // Añade espacio interno en la sección
+    background-color: $secondary-color; // Fondo blanco para esta sección
+    text-align: center; // Centra el texto
+}
+
+// Estilos para el pie de página
+footer {
+    background-color: $primary-color; // Color de fondo del pie de página (verde)
+    color: $secondary-color; // Color del texto en el pie de página es blanco
+    padding: 2rem; // Añade espacio interno alrededor del texto
+    text-align: center; // Centra el texto del pie de página
+}
