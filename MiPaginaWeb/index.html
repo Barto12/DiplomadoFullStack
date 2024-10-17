@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define el tipo de documento como HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Especifica el conjunto de caracteres como UTF-8 para admitir varios idiomas -->
+    
+    <!-- Controla el diseño responsive, haciendo que el sitio sea accesible en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Descripción de la página web para los motores de búsqueda -->
+    <meta name="description" content="Página web básica con un diseño moderno.">
+    
+    <!-- Autor de la página web -->
+    <meta name="author" content="Tu nombre">
+    
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>Página Web Moderna</title>
+
+    <!-- Estilos CSS para la página -->
+    <style>
+        /* Define el estilo del cuerpo, fuentes, márgenes y color de fondo */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Estilo para el encabezado (header) */
+        header {
+            background-color: #0066cc; /* Color de fondo azul */
+            color: white; /* Texto blanco */
+            padding: 20px; /* Relleno interno del encabezado */
+            text-align: center; /* Alinea el texto al centro */
+        }
+
+        /* Estilo para la barra de navegación */
+        nav {
+            display: flex;
+            justify-content: center; /* Centra los enlaces horizontalmente */
+            background-color: #333; /* Color de fondo oscuro */
+            padding: 10px; /* Espaciado dentro de la barra */
+        }
+
+        /* Estilo para los enlaces de la navegación */
+        nav a {
+            color: white; /* Color de texto blanco */
+            padding: 10px 20px; /* Relleno interno de los enlaces */
+            text-decoration: none; /* Elimina el subrayado */
+            margin: 0 10px; /* Espacio entre los enlaces */
+        }
+
+        /* Cambia el fondo del enlace cuando se pasa el cursor por encima */
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Contenedor principal que limita el ancho del contenido */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto; /* Centra el contenido horizontalmente */
+            padding: 20px; /* Relleno interno */
+        }
+
+        /* Estilo para las secciones de contenido */
+        section {
+            padding: 20px;
+            background-color: white; /* Fondo blanco */
+            margin-bottom: 20px; /* Espacio debajo de la sección */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+        }
+
+        /* Estilos para el carrusel de imágenes */
+        .carousel {
+            display: flex;
+            overflow: hidden; /* Oculta las imágenes que están fuera de la vista */
+            position: relative; /* Para posicionar los botones de control */
+        }
+
+        /* Define el estilo de las imágenes del carrusel */
+        .carousel img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 8px; /* Bordes redondeados para las imágenes */
+        }
+
+        /* Contenedor de las imágenes del carrusel */
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out; /* Animación de transición suave */
+        }
+
+        /* Estilos para los botones de control del carrusel (izquierda/derecha) */
+        .carousel-button {
+            position: absolute; /* Se posicionan dentro del contenedor del carrusel */
+            top: 50%; /* Verticalmente centrados */
+            transform: translateY(-50%); /* Alineación perfecta centrada */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            color: white; /* Texto blanco */
+            border: none; /* Sin bordes */
+            padding: 10px; /* Espaciado interno */
+            cursor: pointer; /* Cursor cambia a mano al pasar sobre el botón */
+        }
+
+        /* Botón para retroceder en el carrusel */
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        /* Botón para avanzar en el carrusel */
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        /* Estilo básico para los botones generales */
+        button {
+            padding: 10px 20px;
+            background-color: #0066cc; /* Color de fondo azul */
+            color: white; /* Texto blanco */
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+        }
+
+        /* Estilo hover para los botones: Cambia el fondo cuando se pasa el cursor */
+        button:hover {
+            background-color: #004d99;
+        }
+
+        /* Contenedor de los botones de redes sociales */
+        .social-buttons {
+            display: flex;
+            justify-content: center; /* Centra los botones */
+            margin: 20px 0; /* Margen superior e inferior */
+        }
+
+        /* Estilos para los botones de redes sociales */
+        .social-buttons a {
+            margin: 0 10px;
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: white; /* Texto blanco */
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        /* Reduce la opacidad al pasar el cursor por encima */
+        .social-buttons a:hover {
+            opacity: 0.8;
+        }
+
+        /* Estilos específicos para cada red social */
+        .social-buttons a.facebook {
+            background-color: #3b5998; /* Azul de Facebook */
+        }
+
+        .social-buttons a.twitter {
+            background-color: #1DA1F2; /* Azul de Twitter */
+        }
+
+        .social-buttons a.instagram {
+            background-color: #E1306C; /* Rosa de Instagram */
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Botón de contacto que lleva al formulario */
+        .btn-contacto {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #0066cc;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn-contacto:hover {
+            background-color: #004d99;
+        }
+
+        /* Estilo del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            align-self: center;
+            width: 100%;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado (Header) -->
+    <header>
+        <h1>Bienvenido a Mi Página Web Moderna</h1>
+        <p>Un sitio web básico con diseño moderno y UX mejorada.</p>
+    </header>
+
+    <!-- Barra de Navegación (Navigation) -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+
+        <!-- Carrusel de Imágenes (Carousel) -->
+        <section>
+            <h2>Galería de Imágenes</h2>
+            <div class="carousel">
+                <button class="carousel-button prev">&#10094;</button>
+                <div class="carousel-container">
+                    <img src="https://via.placeholder.com/1200x400?text=Imagen+1" alt="Imagen 1">
+                    <img src="https://via.placeholder.com/1200x400?text=Imagen+2" alt="Imagen 2">
+                    <img src="https://via.placeholder.com/1200x400?text=Imagen+3" alt="Imagen 3">
+                </div>
+                <button class="carousel-button next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Sección Principal (Main Section) -->
+        <section>
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa dedicada a proveer los mejores servicios web.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eget odio convallis viverra.</p>
+            <a href="#contacto" class="btn-contacto">Contáctanos</a>
+        </section>
+
+        <!-- Otra Sección -->
+        <section>
+            <h2>Servicios</h2>
+            <ul>
+                <li>Desarrollo web</li>
+                <li>Marketing digital</li>
+                <li>Consultoría en tecnología</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Formulario de Contacto -->
+        <section id="contacto" class="form-section">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Botones de Redes Sociales Minimalistas -->
+        <div class="social-buttons">
+            <a href="https://facebook.com" target="_blank" class="facebook">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="twitter">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="instagram">Instagram</a>
+        </div>
+
+    </div>
+
+    <!-- Pie de Página (Footer) -->
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para el carrusel -->
+    <script>
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const carouselContainer = document.querySelector('.carousel-container');
+
+        let offset = 0;
+
+        prevButton.addEventListener('click', () => {
+            offset += 100;
+            if (offset > 0) {
+                offset = -200;
+            }
+            carouselContainer.style.transform = `translateX(${offset}%)`;
+        });
+
+        nextButton.addEventListener('click', () => {
+            offset -= 100;
+            if (offset < -200) {
+                offset = 0;
+            }
+            carouselContainer.style.transform = `translateX(${offset}%)`;
+        });
+    </script>
+
+</body>
+</html>
